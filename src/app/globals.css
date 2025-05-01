@@ -383,6 +383,297 @@ blockquote {
   background-color: var(--brass);
 }
 
+/* Scientific Journal Styling */
+.journal-container {
+  max-width: var(--content-width);
+  padding: var(--content-padding);
+  margin: var(--content-margin);
+  background-color: var(--background);
+}
+
+.journal-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--ink-black);
+}
+
+.journal-volume {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.journal-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.journal-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--accent-primary);
+}
+
+.journal-feed {
+  margin-bottom: 3rem;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .journal-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.journal-article {
+  position: relative;
+  background-color: var(--background);
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.journal-article-inner {
+  border: 1px solid var(--accent-primary);
+  background-color: #fcf9f2;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Create an aged paper effect */
+.journal-article-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.journal-article-metadata {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.journal-article-date {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--accent-secondary);
+}
+
+.journal-article-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  color: var(--ink-black);
+}
+
+.journal-article-author {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.journal-article-institution {
+  font-style: italic;
+  color: var(--accent-secondary);
+  font-size: 0.9rem;
+}
+
+.journal-article-content-container {
+  position: relative;
+  z-index: 2;
+}
+
+.journal-article-content {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Drop cap styling */
+.journal-dropcap::first-letter {
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.85;
+  padding: 0.1rem 0.6rem 0 0;
+  color: var(--burgundy);
+  font-weight: 700;
+}
+
+/* Annotation styling */
+.journal-article-annotation-container {
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  width: 2.5rem;
+  height: 2rem;
+  z-index: 5;
+}
+
+.journal-article-annotation-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--burgundy);
+  cursor: help;
+  position: relative;
+}
+
+/* Tooltip for annotations */
+.journal-article-annotation-container::after {
+  content: attr(data-annotation);
+  position: absolute;
+  width: 240px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background: #fcf9f5;
+  border: 1px solid var(--accent-primary);
+  padding: 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 2rem;
+  color: var(--ink-black);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-10px);
+  pointer-events: none;
+  line-height: 1.4;
+  font-style: italic;
+  text-align: left;
+  hyphens: none;
+  z-index: 100;
+}
+
+/* Show annotation on hover */
+.journal-article-annotation-container:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Simulate handwritten annotations in margin */
+@media (min-width: 1024px) {
+  .journal-article-annotation-container {
+    left: -3.5rem;
+  }
+  
+  .journal-article-annotation-marker {
+    font-family: 'Courier New', monospace;
+    transform: rotate(-10deg);
+    transition: transform 0.3s;
+  }
+  
+  .journal-article-annotation-container:hover .journal-article-annotation-marker {
+    transform: rotate(-5deg) scale(1.1);
+    color: var(--accent-secondary);
+  }
+  
+  .journal-article-annotation-container::after {
+    width: 280px;
+    transform: translateX(-10px);
+    font-family: 'Courier New', monospace;
+    background-image: 
+      linear-gradient(#fcf9f5 1.1rem, #ccc 1.2rem);
+    background-size: 
+      100% 1.2rem;
+    line-height: 1.3rem;
+  }
+  
+  .journal-article-annotation-container:hover::after {
+    transform: translateX(0);
+  }
+}
+
+.journal-article-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.journal-article-ornament {
+  font-size: 1.8rem;
+  color: var(--accent-primary);
+  opacity: 0.7;
+}
+
+.journal-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--ink-black);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* Make adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  .journal-article-inner {
+    padding: 1.5rem;
+  }
+  
+  .journal-article-annotation-container {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .journal-article-annotation-marker {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  
+  .journal-article-annotation-container::after {
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    width: calc(100% - 2rem);
+  }
+  
+  .journal-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .newspaper-columns-2,

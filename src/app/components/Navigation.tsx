@@ -10,7 +10,8 @@ export default function Navigation() {
     { name: 'Telegraph Room', href: '/telegraph-room' },
     { name: 'Scientific Dispatches', href: '/scientific-dispatches' },
     { name: 'The Exchange', href: '/the-exchange' },
-    { name: 'The Weatheroscope', href: '/the-weatheroscope' }
+    { name: 'The Weatheroscope', href: '/the-weatheroscope' },
+    { name: 'Scientific Journal', href: '/journal' }
   ];
 
   return (
