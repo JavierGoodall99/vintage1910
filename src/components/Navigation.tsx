@@ -10,12 +10,12 @@ export default function Navigation() {
   
   const tabs = [
     { name: 'News', href: '/' },
-    { name: 'Emporium', href: '/shop' },
+    { name: 'Scientific Journal', href: '/journal' },
+    { name: 'Invention Timeline', href: '/timeline' },
     { name: 'Telegraph Room', href: '/telegraph-room' },
     // { name: 'The Weatheroscope', href: '/the-weatheroscope' },
-    { name: 'Invention Timeline', href: '/timeline' },
-    { name: 'Scientific Journal', href: '/journal' },
-    { name: 'Thought Compendium', href: '/thought-index' }
+    { name: 'Thought Compendium', href: '/thought-index' },
+    { name: 'Emporium', href: '/shop' }
   ];
 
   const isActive = (href: string): boolean => {
