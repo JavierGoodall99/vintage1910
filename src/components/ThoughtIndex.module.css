@@ -1,0 +1,410 @@
+.thoughtIndexContainer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 3rem auto;
+  font-family: var(--font-body);
+}
+
+.thoughtIndexTitle {
+  font-family: var(--font-heading);
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--burgundy);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.thoughtIndexDescription {
+  text-align: center;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  color: var(--brass);
+  line-height: 1.5;
+}
+
+/* Card catalog container styled like a wooden filing cabinet drawer */
+.cardCatalogContainer {
+  width: 100%;
+  background-color: #8B5A2B; /* Rich wood brown color */
+  border: 1px solid #5D3A1A;
+  border-radius: 6px;
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    inset 0 2px 3px rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+}
+
+/* Wooden drawer top bar with handle */
+.catalogDrawerTop {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(to right, #8B5A2B, #A67C52, #8B5A2B);
+  border-bottom: 2px solid #5D3A1A;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Wooden grain texture overlay */
+.catalogDrawerTop::before,
+.catalogDrawerBottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.15'/%3E%3C/svg%3E");
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Drawer pull handle */
+.drawerHandle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 15px;
+  background: linear-gradient(to bottom, #C0A080, #8B5A2B);
+  border: 1px solid #5D3A1A;
+  border-radius: 10px;
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.3),
+    0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive 3-column grid for cards */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2.5rem;
+  background-color: #A67C52; /* Lighter wood color for card area */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.1'/%3E%3C/svg%3E");
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual thought card styling */
+.thoughtCard {
+  aspect-ratio: 5/3;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.thoughtCard:hover {
+  transform: translateY(-10px);
+  z-index: 10;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #F8F2E2; /* Slightly yellowed paper color */
+  border: 1px solid #DDD2B4;
+  padding: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Deckled (uneven) edge effect using a mask */
+.cardInner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 
+    0 0 0 2px #F8F2E2,
+    0 0 0 3px rgba(200, 175, 150, 0.3);
+  z-index: 1;
+}
+
+/* Subtle paper texture effect */
+.cardInner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cfilter id='paper-texture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper-texture)' opacity='0.07'/%3E%3C/svg%3E");
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.thoughtCard:hover .cardInner {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Folded card corner effect */
+.cardCorner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, transparent 50%, #E0D6C0 50%);
+}
+
+/* Card title styling */
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin: 0 0 0.8rem;
+  line-height: 1.2;
+  color: var(--burgundy);
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+/* Card metadata styling */
+.cardMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.cardAuthor {
+  font-style: italic;
+  color: var(--brass);
+}
+
+.cardYear {
+  font-variant-numeric: oldstyle-nums;
+  color: var(--brass);
+}
+
+/* Card excerpt styling */
+.cardExcerpt {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--brass);
+  position: relative;
+  z-index: 2;
+  flex-grow: 1;
+  font-family: var(--font-body);
+}
+
+/* Bottom of catalog drawer */
+.catalogDrawerBottom {
+  height: 30px;
+  width: 100%;
+  background: linear-gradient(to right, #8B5A2B, #A67C52, #8B5A2B);
+  border-top: 2px solid #5D3A1A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawerLabel {
+  background-color: #F8F2E2;
+  border: 1px solid #DDD2B4;
+  padding: 2px 15px;
+  font-size: 0.75rem;
+  font-family: var(--font-heading);
+  color: var(--burgundy);
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+/* Modal overlay for full essay view */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.modalContent {
+  background-color: #F8F2E2;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #DDD2B4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--burgundy);
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Edwardian-era pamphlet styling */
+.pamphletPage {
+  padding: 3rem;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cfilter id='paper-texture'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper-texture)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.pamphletHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--brass);
+}
+
+.pamphletVolume {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--brass);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.pamphletTitle {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin: 0 0 1rem;
+  color: var(--burgundy);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+}
+
+.pamphletAuthorLine {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.pamphletAuthor, .pamphletYear {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--brass);
+}
+
+.ornamentalDivider {
+  font-size: 1.5rem;
+  color: var(--brass);
+  opacity: 0.8;
+}
+
+.pamphletBody {
+  line-height: 1.8;
+  text-align: justify;
+  hyphens: auto;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--brass);
+  margin-bottom: 2rem;
+}
+
+/* Drop cap styling for first paragraph */
+.firstParagraph::first-letter {
+  font-family: var(--font-heading);
+  float: left;
+  font-size: 3.5rem;
+  line-height: 0.85;
+  padding: 0.1rem 0.6rem 0 0;
+  color: var(--burgundy);
+  font-weight: 800;
+}
+
+.pamphletBody p {
+  margin-bottom: 1.5rem;
+}
+
+.pamphletFooter {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--brass);
+}
+
+.pamphletPageNumber {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--brass);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .cardGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .thoughtIndexTitle {
+    font-size: 2rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .pamphletPage {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .thoughtIndexTitle {
+    font-size: 1.7rem;
+  }
+
+  .thoughtIndexDescription {
+    font-size: 0.95rem;
+  }
+
+  .pamphletTitle {
+    font-size: 1.8rem;
+  }
+
+  .pamphletPage {
+    padding: 1.5rem;
+  }
+}

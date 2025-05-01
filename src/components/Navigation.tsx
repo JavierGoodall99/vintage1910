@@ -9,9 +9,10 @@ export default function Navigation() {
   const tabs = [
     { name: 'Vintage Emporium', href: '/shop' },
     { name: 'Telegraph Room', href: '/telegraph-room' },
-    { name: 'The Weatheroscope', href: '/the-weatheroscope' },
+    // { name: 'The Weatheroscope', href: '/the-weatheroscope' },
     { name: 'Invention Timeline', href: '/timeline' },
-    { name: 'Scientific Journal', href: '/journal' }
+    { name: 'Scientific Journal', href: '/journal' },
+    { name: 'Thought Compendium', href: '/thought-index' }
   ];
 
   return (
