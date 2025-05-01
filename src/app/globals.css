@@ -169,6 +169,16 @@ blockquote {
   letter-spacing: 1px;
   padding: 0 0.5rem;
   cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.newspaper-nav-item.active {
+  color: var(--burgundy);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--brass);
+  text-underline-offset: 4px;
+  transform: translateY(-2px);
 }
 
 .newspaper-headline {
