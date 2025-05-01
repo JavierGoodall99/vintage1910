@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import InventionTimeline from '../../components/InventionTimeline';
+import InventionTimeline from '../../components/InventionTimeline/InventionTimeline';
 
 export const metadata: Metadata = {
   title: 'Edwardian Inventions Timeline | Vintage Tailwind',

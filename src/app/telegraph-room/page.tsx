@@ -1,5 +1,5 @@
 import React from 'react'
-import TelegramChat from '../../components/TelegramChat'
+import TelegramChat from '../../components/TelegramChat/TelegramChat'
 
 export default function TelegramPage() {
   return (

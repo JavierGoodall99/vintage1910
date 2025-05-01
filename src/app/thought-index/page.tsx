@@ -1,4 +1,4 @@
-import ThoughtIndex from '@/components/ThoughtIndex';
+import ThoughtIndex from '@/components/ThoughtIndex/ThoughtIndex';
 
 export default function ThoughtIndexPage() {
     return (

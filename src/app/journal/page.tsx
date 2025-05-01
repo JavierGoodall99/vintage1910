@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import JournalFeed from '../../components/JournalFeed';
+import JournalFeed from '../../components/JournalFeed/JournalFeed';
 
 export const metadata: Metadata = {
   title: 'Scientific Journal | Vintage Tailwind',

@@ -1,4 +1,4 @@
-import WeatherBarometer from '../../components/WeatherBarometer';
+import WeatherBarometer from '../../components/WeatherBarometer/WeatherBarometer';
 
 export default function WeatheroscopePage() {
   return (
