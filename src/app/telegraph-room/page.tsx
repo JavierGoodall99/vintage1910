@@ -4,7 +4,9 @@ import TelegramChat from '../../components/TelegramChat'
 export default function TelegramPage() {
   return (
     <div className="telegram-section">
-    <h2 className="section-title">TELEGRAPHIC COMMUNICATION STATION</h2>
+    <header className="journal-header">
+        <h1>TELEGRAPHIC COMMUNICATION STATION</h1>
+      </header>
     <TelegramChat />
   </div>
   )

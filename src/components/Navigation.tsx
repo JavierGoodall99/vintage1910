@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
-  const [activeTab, setActiveTab] = useState<number | null>(null);
+  const [hoverTab, setHoverTab] = useState<number | null>(null);
+  const pathname = usePathname();
   
   const tabs = [
     { name: 'News', href: '/' },
@@ -16,6 +18,13 @@ export default function Navigation() {
     { name: 'Thought Compendium', href: '/thought-index' }
   ];
 
+  const isActive = (href: string): boolean => {
+    if (href === '/') {
+      return pathname === href;
+    }
+    return pathname?.startsWith(href) || false;
+  };
+
   return (
     <nav className="vintage-filing-index">
       <div className="filing-drawer">
@@ -23,9 +32,9 @@ export default function Navigation() {
           <Link 
             key={index} 
             href={tab.href}
-            className={`filing-tab ${activeTab === index ? 'active' : ''}`}
-            onMouseOver={() => setActiveTab(index)}
-            onMouseOut={() => setActiveTab(null)}
+            className={`filing-tab ${isActive(tab.href) ? 'active' : ''} ${hoverTab === index ? 'hover' : ''}`}
+            onMouseOver={() => setHoverTab(index)}
+            onMouseOut={() => setHoverTab(null)}
           >
             <div className="filing-tab-content">
               <span className="tab-text">{tab.name}</span>
