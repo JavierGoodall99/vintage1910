@@ -98,9 +98,8 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             
             {/* Right side - Product Details */}
             <div className="md:w-2/3 md:pl-6">
-              {/* Title with decorative underline */}
               <div className="mb-4 pb-2 border-b border-amber-800 border-opacity-30">
-                <h2 className="font-serif text-2xl text-amber-900">{product.title}</h2>
+                <h2 className="font-serif text-2xl">{product.title}</h2>
                 <p className="text-amber-800 italic">{product.shortDescription}</p>
               </div>
               
@@ -139,7 +138,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
               
               {/* Vintage certificate seal */}
               <div 
-                className="absolute bottom-3 right-3 w-20 h-20 rounded-full bg-red-800 flex items-center justify-center transform rotate-12 select-none"
+                className="absolute bottom-3 left-3 w-20 h-20 rounded-full bg-red-800 flex items-center justify-center transform rotate-12 select-none"
                 style={{
                   boxShadow: '0 4px 0 #8B0000, 0 6px 10px rgba(0, 0, 0, 0.15)'
                 }}
