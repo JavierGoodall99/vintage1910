@@ -1,8 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 
+type SectionKey = "LOCAL NEWS" | "INTERNATIONAL" | "BUSINESS" | "SPORTS" | "SOCIETY" | "ARTS";
+
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("LOCAL NEWS");
+  const [activeSection, setActiveSection] = useState<SectionKey>("LOCAL NEWS");
 
   // Content for different sections
   const newsContent = {
@@ -405,7 +407,7 @@ export default function Home() {
           <div 
             key={section} 
             className={`newspaper-nav-item ${activeSection === section ? 'active' : ''}`}
-            onClick={() => setActiveSection(section)}
+            onClick={() => setActiveSection(section as SectionKey)}
             style={{ cursor: 'pointer' }}
           >
             {section}
