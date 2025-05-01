@@ -1,5 +1,5 @@
 import React from 'react'
-import ShopDisplay from '../components/ShopDisplay'
+import ShopDisplay from '../../components/ShopDisplay'
 
 export const metadata = {
   title: "Vintage Emporium | Shop",
