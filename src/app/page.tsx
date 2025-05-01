@@ -1,103 +1,123 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <div className="newspaper-header">
+        <div className="newspaper-date">
+          MAY 1, 1910 • MORNING EDITION • FIVE CENTS
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <h1>THE DAILY CHRONICLE</h1>
+        <div className="newspaper-subheading">
+        &quot;ALL THE NEWS THAT&apos;S FIT TO PRINT&quot;
+        </div>
+        <div className="newspaper-volume">
+          VOL. XXII — NO. 6,423
+        </div>
+      </div>
+
+      <div className="newspaper-navigation">
+        <div className="newspaper-nav-item">LOCAL NEWS</div>
+        <div className="newspaper-nav-item">INTERNATIONAL</div>
+        <div className="newspaper-nav-item">BUSINESS</div>
+        <div className="newspaper-nav-item">SPORTS</div>
+        <div className="newspaper-nav-item">SOCIETY</div>
+        <div className="newspaper-nav-item">ARTS</div>
+      </div>
+
+      <div className="newspaper-headline">
+        <h2>AEROPLANE ALTITUDE RECORD SHATTERED</h2>
+        <div className="newspaper-headline-details">
+          Frenchman Ascends to Unprecedented Height of 9,840 Feet
+        </div>
+      </div>
+
+      <div className="newspaper-columns-3">
+        <article className="newspaper-article">
+          <p className="newspaper-dropcap">
+            The world of aviation continues to witness extraordinary feats as progress in aeronautical engineering advances at a pace that would have seemed impossible mere years ago. Yesterday afternoon, at precisely half-past three o&apos;clock, Monsieur Louis Paulhan of France ascended to the remarkable altitude of 9,840 feet in his Farman biplane, establishing a new world record and demonstrating the ever-expanding capabilities of these marvelous flying machines.
+          </p>
+          <p>
+            The record-breaking flight took place at the Aviation Meeting at Rheims, where spectators gathered in great numbers to witness the historic achievement. Paulhan&apos;s flight lasted approximately forty-five minutes, during which he battled strong winds and near-freezing temperatures at the highest elevations.
+          </p>
+          <p>
+          &quot;The air becomes exceedingly thin at such heights,&apos; reported Paulhan after his descent. &quot;One must be prepared for the demands such conditions place upon both machine and pilot.&quot;
+          </p>
+          <p>
+            Aviation experts suggest this achievement opens new possibilities for the future of air travel, potentially allowing for more efficient long-distance journeys by taking advantage of more favorable wind conditions at higher altitudes.
+          </p>
+          <div className="newspaper-continued">Continued on Page A2, Column 4</div>
+        </article>
+
+        <article className="newspaper-article">
+          <h3>MOTORCAR SALES REACH UNPRECEDENTED HEIGHTS</h3>
+          <p>
+            The Ford Motor Company announced yesterday that sales of their Model T automobile have exceeded all expectations, with more than 12,000 units sold in the previous month alone. This remarkable figure represents a 40% increase over the same period last year.
+          </p>
+          <p>
+            Henry Ford attributes this success to his company&apos;s revolutionary assembly line method, which has dramatically reduced production costs while maintaining quality standards. &quot;Our aim is to produce motorcars that the average American worker can afford,&quot; stated Ford in a recent interview.
+          </p>
+          <p>
+            The popularity of these affordable motorcars is transforming American society, with rural families now able to travel to nearby towns and cities with unprecedented ease. Meanwhile, city dwellers increasingly venture into the countryside for weekend excursions.
+          </p>
+          <div className="newspaper-continued">Continued on Page B1, Column 2</div>
+        </article>
+
+        <article className="newspaper-article">
+          <h3>LOCAL SUFFRAGIST MOVEMENT GAINS MOMENTUM</h3>
+          <p>
+            The campaign for women&apos;s voting rights has found renewed vigor following yesterday&apos;s well-attended rally at City Hall. More than two hundred supporters gathered to hear speeches delivered by prominent suffragists, including noted orator Mrs. Elizabeth Cady Stanton.
+          </p>
+          <p>
+          &quot;The right to vote is fundamental to our democracy, yet half our citizens are denied this basic liberty,&quot; declared Mrs. Stanton to enthusiastic applause. &quot;We shall continue our peaceful but determined efforts until justice prevails.&quot;
+          </p>
+          <blockquote>
+          &quot;The day will come when men will recognize woman as his peer, not only at the fireside, but in councils of the nation.&quot;
+          </blockquote>
+          <p>
+            City officials maintained order throughout the demonstration, though several participants reported receiving hostile reactions from passers-by. Nevertheless, organizers deemed the event a success and announced plans for a larger demonstration next month.
+          </p>
+          <div className="newspaper-continued">Continued on Page A4, Column 1</div>
+        </article>
+
+        <article className="newspaper-article">
+          <h3>WEATHER FORECAST</h3>
+          <p>
+            Fair weather is expected today with moderate temperatures ranging from 55 to 68 degrees Fahrenheit. Light easterly winds becoming southerly in the afternoon. Chance of precipitation: 10%.
+          </p>
+          <p>
+            Tomorrow: Increasing cloudiness with a possibility of scattered showers by evening. Temperature remaining steady.
+          </p>
+        </article>
+
+        <article className="newspaper-article">
+          <h3>STOCK MARKET REPORT</h3>
+          <p>
+            The exchange witnessed moderate activity yesterday with industrials showing strength. United States Steel advanced 2⅛ points, while American Tobacco declined ¾. Railroad securities remained largely unchanged amidst uncertainty regarding pending regulatory legislation.
+          </p>
+          <p>
+            Gold continues firm at $20.67 per troy ounce. Sterling exchange rate: $4.86.
+          </p>
+        </article>
+
+        <article className="newspaper-article advertisement">
+          <h3 className="advert-heading">BURTON&apos;S DEPARTMENT STORE</h3>
+          <p className="advert-text">
+            SPRING FASHIONS NOW AVAILABLE
+          </p>
+          <p>
+            Ladies&apos; Spring Hats from $2.95<br />
+            Fine Silk Gloves at $1.50 per pair<br />
+            Men&apos;s Wool Suits from $15.00<br />
+            Children&apos;s Shoes from $1.25
+          </p>
+          <p className="advert-footer">
+            MAIN STREET & FIFTH AVENUE
+          </p>
+        </article>
+      </div>
+
+      <div className="newspaper-footer">
+        <p>THE DAILY CHRONICLE • ESTABLISHED 1888 • PRICE: FIVE CENTS</p>
+      </div>
+    </main>
   );
 }

@@ -65,14 +65,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: -0.03em;
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
   text-transform: uppercase;
-  border-bottom: 3px double var(--brass);
-  padding-bottom: 0.75rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  line-height: 1;
 }
 
 h2 {
@@ -112,14 +113,15 @@ blockquote {
 
 .newspaper-header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 1rem 0 2rem;
   border-bottom: 3px double var(--ink-black);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .newspaper-header h1 {
-  font-size: 3rem;
-  margin: 0;
+  font-size: 4.5rem;
+  margin: 0.5rem 0;
   padding: 0;
   letter-spacing: -0.05em;
   border: none;
@@ -128,6 +130,64 @@ blockquote {
 
 .newspaper-date {
   font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.newspaper-subheading {
+  font-family: var(--font-heading);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.newspaper-volume {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.newspaper-navigation {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--ink-black);
+  border-bottom: 3px double var(--ink-black);
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.newspaper-nav-item {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.newspaper-headline {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.newspaper-headline h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-weight: 800;
+}
+
+.newspaper-headline-details {
+  font-style: italic;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -148,21 +208,59 @@ blockquote {
   margin-bottom: 2rem;
 }
 
-.newspaper-dropcap::first-letter {
+.newspaper-dropcap:first-letter {
   font-family: var(--font-heading);
   float: left;
-  font-size: 4rem;
-  line-height: 0.8;
+  font-size: 4.5rem;
+  line-height: 0.85;
   padding-right: 0.5rem;
   color: var(--accent-secondary);
+  font-weight: 700;
+}
+
+.newspaper-continued {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--ink-black);
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .newspaper-footer {
-  border-top: 1px solid var(--ink-black);
+  border-top: 3px double var(--ink-black);
   padding-top: 1rem;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.advertisement {
+  border: 1px solid var(--accent-primary);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.advert-heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--accent-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.advert-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.advert-footer {
+  font-weight: 500;
 }
 
 /* Responsive adjustments */
@@ -172,15 +270,42 @@ blockquote {
     column-count: 1;
   }
   
-  h1 {
-    font-size: 2rem;
+  .newspaper-header h1 {
+    font-size: 3rem;
   }
   
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .newspaper-headline h2 {
+    font-size: 2rem;
+  }
+  
+  .newspaper-navigation {
+    justify-content: center;
+    gap: 1rem;
   }
   
   :root {
     --content-padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .newspaper-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .newspaper-headline h2 {
+    font-size: 1.5rem;
+  }
+  
+  .newspaper-headline-details {
+    font-size: 1.1rem;
+  }
+  
+  .newspaper-dropcap:first-letter {
+    font-size: 3.5rem;
   }
 }
