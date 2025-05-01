@@ -21,6 +21,17 @@ interface Invention {
 const inventions: Invention[] = [
   {
     id: 1,
+    year: 1892,
+    title: "The Luminiferous Æther Densitometer",
+    inventor: "Professor Edmund Halley II",
+    illustration: "/Luminiferous.png", 
+    description: "A precision instrument capable of measuring the subtle variations in æther density believed to permeate all of space, revealing previously undetectable cosmic influences on terrestrial affairs.",
+    purpose: "Created to map the invisible currents of the æther and determine their effects on weather patterns, human behavior, and electromagnetic phenomena.",
+    mechanism: "The device employs a system of calibrated vacuum chambers containing specially sensitized gold leaf suspended in mercury. Variations in æther density cause minute deflections in the gold leaf, which are magnified through an intricate system of lenses and recorded on a rotating copper drum.",
+    impact: "Though the instrument produced fascinating data that briefly captivated the Royal Society, the emergence of Einstein's relativity theory gradually rendered æther studies obsolete, relegating the device to museum collections."
+  },
+  {
+    id: 2,
     year: 1887,
     title: "The Aetheric Thought-Radio",
     inventor: "Nikolai Tesla",
@@ -31,7 +42,7 @@ const inventions: Invention[] = [
     impact: "While initially met with skepticism, the Thought-Radio found limited use among explorers in the Arctic Circle before production ceased in 1891 due to unpredictable transmissions and occasional cross-talk with dreams."
   },
   {
-    id: 2,
+    id: 3,
     year: 1899,
     title: "The Chronometric Aether Stabilizer",
     inventor: "Sir William Thomson",
@@ -42,7 +53,7 @@ const inventions: Invention[] = [
     impact: "Widely adopted by astronomical observatories and navigational authorities, the Stabilizer greatly improved the precision of longitude calculations and railway schedules throughout the Empire."
   },
   {
-    id: 3,
+    id: 4,
     year: 1905,
     title: "The Heliotropic Self-Adjusting Observatory",
     inventor: "Lady Adelaide Worthington",
@@ -53,7 +64,18 @@ const inventions: Invention[] = [
     impact: "Lady Worthington's invention revolutionized solar astronomy, leading to the discovery of several previously unobserved solar phenomena and earned her the prestigious Copley Medal from the Royal Society."
   },
   {
-    id: 4,
+    id: 5,
+    year: 1907,
+    title: "The Telegraphic Emotion Encoder",
+    inventor: "Lady Victoria Blackwood",
+    illustration: "/TelegraphicEmotion.png",
+    description: "An unprecedented communication device capable of transmitting emotional states along with textual messages through standard telegraph lines, allowing correspondents to feel each other's sentiments across vast distances.",
+    purpose: "Designed to enhance diplomatic and personal communications by eliminating the ambiguity of written words alone, thereby reducing misunderstandings in delicate negotiations.",
+    mechanism: "The sender's emotional state is measured through galvanic skin response sensors and pulse monitors integrated into the telegraph key. These readings are encoded into specialized signal patterns that trigger corresponding electrical stimuli at the receiving station, inducing similar physiological responses in the recipient.",
+    impact: "While initially celebrated in high society circles and by several European diplomatic corps, the device fell out of favor following incidents of emotional manipulation and the psychological strain reported by telegraph operators exposed to intense emotional transmissions throughout their shifts."
+  },
+  {
+    id: 6,
     year: 1911,
     title: "The Atmospheric Memory Extractor",
     inventor: "Professor Archibald Thornfield",
@@ -64,7 +86,7 @@ const inventions: Invention[] = [
     impact: "Initially embraced by several police departments and used in at least twelve murder investigations. Later fell into disrepute after notable failures and accusations of manipulated results."
   },
   {
-    id: 5,
+    id: 7,
     year: 1919,
     title: "The Phrenological Automation Engine",
     inventor: "Dr. Elias Wintersmith",
