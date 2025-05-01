@@ -7,6 +7,7 @@ export default function Navigation() {
   const [activeTab, setActiveTab] = useState<number | null>(null);
   
   const tabs = [
+    { name: 'Vintage Emporium', href: '/shop' },
     { name: 'Telegraph Room', href: '/telegraph-room' },
     { name: 'Scientific Dispatches', href: '/scientific-dispatches' },
     { name: 'The Exchange', href: '/the-exchange' },
