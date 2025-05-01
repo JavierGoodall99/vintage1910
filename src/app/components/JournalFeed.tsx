@@ -36,7 +36,7 @@ const articles = [
     title: 'Concerning the New Element Hafnium',
     author: 'Dr. Dirk Coster & Prof. Georg von Hevesy',
     institution: 'University of Copenhagen',
-    content: `We present herein comprehensive spectroscopic evidence confirming the discovery of element 72, which we have named Hafnium after Hafnia, the Latin name for Copenhagen. X-ray spectroscopic analysis of zirconium ore samples revealed the characteristic emission lines predicted by Bohr's atomic theory. The chemical properties of Hafnium demonstrate its proper placement in the periodic table as a homologue of zirconium, though its atomic weight has been determined to be 178.6, significantly higher than previously estimated.`,
+    content: `We present herein comprehensive spectroscopic evidence confirming the discovery of element 72, which we have named Hafnium after Hafnia, the Latin name for Copenhagen. X-ray spectroscopic analysis of zirconium ore samples revealed the characteristic emission lines predicted by Bohr's atomic theory. The chemical properties of Hafnium demonstrate its proper placement in the periodic table as a homologue of zirconium, though its atomic weight has been determined to be 178.6, higher than previously estimated.`,
     annotation: 'The discovery of hafnium (element 72) validated Bohr\'s atomic theory and filled a critical gap in Mendeleev\'s periodic table.'
   }
 ];
