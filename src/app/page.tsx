@@ -1,4 +1,4 @@
-import TelegramChat from './components/TelegramChat';
+
 
 export default function Home() {
   return (
@@ -24,11 +24,6 @@ export default function Home() {
         <div className="newspaper-nav-item">SOCIETY</div>
         <div className="newspaper-nav-item">ARTS</div>
       </div>
-
-      <section className="telegram-section">
-        <h2 className="section-title">TELEGRAPHIC COMMUNICATION STATION</h2>
-        <TelegramChat />
-      </section>
 
       <div className="newspaper-headline">
         <h2>AEROPLANE ALTITUDE RECORD SHATTERED</h2>
