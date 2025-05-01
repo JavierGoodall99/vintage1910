@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="60" cy="60" r="55" fill="#f5d78e" stroke="#8b4513" stroke-width="2" />
+  <circle cx="60" cy="60" r="50" fill="#f8e2a0" stroke="#8b4513" stroke-width="1" />
+  <circle cx="60" cy="60" r="3" fill="#8b4513" />
+  
+  <!-- Direction markers -->
+  <text x="60" y="20" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">N</text>
+  <text x="60" y="105" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">S</text>
+  <text x="20" y="62" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">W</text>
+  <text x="100" y="62" text-anchor="middle" font-family="serif" font-size="12" fill="#8b4513">E</text>
+  
+  <!-- Cardinal direction lines -->
+  <line x1="60" y1="25" x2="60" y2="35" stroke="#8b4513" stroke-width="1" />
+  <line x1="60" y1="85" x2="60" y2="95" stroke="#8b4513" stroke-width="1" />
+  <line x1="25" y1="60" x2="35" y2="60" stroke="#8b4513" stroke-width="1" />
+  <line x1="85" y1="60" x2="95" y2="60" stroke="#8b4513" stroke-width="1" />
+  
+  <!-- Compass needle -->
+  <polygon points="60,30 64,60 60,90 56,60" fill="#b22222" />
+  <polygon points="55,60 60,55 65,60 60,65" fill="#000" />
+  
+  <!-- Decorative tickmarks -->
+  <circle cx="60" cy="60" r="45" fill="none" stroke="#8b4513" stroke-width="0.5" stroke-dasharray="2,4" />
+</svg>

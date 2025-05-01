@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pen body rotation for display -->
+  <g transform="translate(60, 60) rotate(-30) translate(-60, -60)">
+    <!-- Pen cap -->
+    <path d="M65,30 L75,30 L80,40 L60,40 Z" fill="#d4a76a" stroke="#8b4513" stroke-width="1" />
+    <rect x="65" y="25" width="10" height="5" rx="2" fill="#8b4513" />
+    <path d="M63,40 L77,40 L75,45 L65,45 Z" fill="#d4a76a" stroke="#8b4513" stroke-width="0.75" />
+    
+    <!-- Pen body -->
+    <rect x="65" y="45" width="10" height="50" rx="2" fill="#6b3004" stroke="#3b1e09" stroke-width="1" />
+    
+    <!-- Decorative bands -->
+    <rect x="65" y="50" width="10" height="3" fill="#d4a76a" stroke="#8b4513" stroke-width="0.5" />
+    <rect x="65" y="65" width="10" height="2" fill="#d4a76a" stroke="#8b4513" stroke-width="0.5" />
+    <rect x="65" y="80" width="10" height="2" fill="#d4a76a" stroke="#8b4513" stroke-width="0.5" />
+    
+    <!-- Pen nib -->
+    <path d="M70,95 L67,105 L73,105 Z" fill="#d4a76a" stroke="#8b4513" stroke-width="0.75" />
+    <path d="M70,105 L70,110" stroke="#8b4513" stroke-width="0.75" />
+    <path d="M67,105 L73,105" stroke="#8b4513" stroke-width="0.5" />
+  </g>
+  
+  <!-- Ink drop -->
+  <path d="M47,113 C47,110 50,110 50,113 C50,116 47,116 47,113 Z" fill="#000" fill-opacity="0.8" />
+  
+  <!-- Ink bottle suggestion -->
+  <circle cx="85" cy="100" r="10" fill="none" stroke="#8b4513" stroke-width="0.75" />
+  <path d="M75,100 L80,100" stroke="#8b4513" stroke-width="0.5" />
+  <path d="M90,100 L95,100" stroke="#8b4513" stroke-width="0.5" />
+  <path d="M85,90 L85,95" stroke="#8b4513" stroke-width="0.5" />
+  <path d="M85,105 L85,110" stroke="#8b4513" stroke-width="0.5" />
+</svg>
