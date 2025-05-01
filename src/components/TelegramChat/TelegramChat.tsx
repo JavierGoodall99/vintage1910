@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Howl } from 'howler';
 import styles from './TelegramChat.module.css';
 
 interface Message {
@@ -25,50 +24,10 @@ export default function TelegramChat() {
   const [isTyping, setIsTyping] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Sound effects
-  const telegraphSound = useRef<Howl | null>(null);
-
-  useEffect(() => {
-    // Initialize sound effects
-    telegraphSound.current = new Howl({
-      src: ['/telegraph-click.mp3'],
-      volume: 0.5,
-    });
-
-    // Make sure we have the telegraph sound file
-    const fetchSounds = async () => {
-      try {
-        const response = await fetch('/telegraph-click.mp3', { method: 'HEAD' });
-        if (!response.ok) {
-          console.warn('Telegraph sound file not found. Please add it to the public directory.');
-        }
-      } catch (error) {
-        console.warn('Could not check for telegraph sound file:', error);
-      }
-    };
-    
-    fetchSounds();
-  }, []);
-
   // Auto-scroll to the bottom when messages change
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
-
-  // Play telegraph sound at random intervals during animation
-  useEffect(() => {
-    let soundInterval: NodeJS.Timeout | null = null;
-    
-    if (isAnimating && telegraphSound.current) {
-      soundInterval = setInterval(() => {
-        telegraphSound.current?.play();
-      }, Math.random() * 200 + 100); // Random interval between 100-300ms
-    }
-    
-    return () => {
-      if (soundInterval) clearInterval(soundInterval);
-    };
-  }, [isAnimating]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

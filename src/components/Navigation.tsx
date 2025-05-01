@@ -13,7 +13,6 @@ export default function Navigation() {
     { name: 'Scientific Journal', href: '/journal' },
     { name: 'Invention Timeline', href: '/timeline' },
     { name: 'Telegraph Room', href: '/telegraph-room' },
-    // { name: 'The Weatheroscope', href: '/the-weatheroscope' },
     { name: 'Thought Compendium', href: '/thought-index' },
     { name: 'Emporium', href: '/shop' }
   ];
