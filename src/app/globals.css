@@ -351,6 +351,38 @@ blockquote {
   text-overflow: ellipsis;
 }
 
+/* Telegram Section */
+.telegram-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+  border-top: 3px double var(--ink-black);
+  border-bottom: 3px double var(--ink-black);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--ink-black);
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background-color: var(--brass);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .newspaper-columns-2,
@@ -408,6 +440,11 @@ blockquote {
     height: 90%;
     border-radius: 50%;
   }
+  
+  .telegram-section {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -425,5 +462,9 @@ blockquote {
   
   .newspaper-dropcap:first-letter {
     font-size: 3.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
   }
 }

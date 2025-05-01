@@ -1,0 +1,313 @@
+.telegramOffice {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f3e9d9;
+  border: 12px solid #8b5e3c;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), inset 0 0 0 1px #d2b48c;
+  padding: 20px;
+  font-family: "Courier New", monospace;
+  color: #331800;
+  position: relative;
+  overflow: hidden;
+}
+
+.telegramOffice::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23b39c6f' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.officeHeader {
+  text-align: center;
+  border-bottom: 2px solid #8b5e3c;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.officeHeader h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #5a3921;
+  font-weight: 900;
+  text-shadow: 1px 1px 0 #d2b48c;
+  font-family: 'Times New Roman', serif;
+}
+
+.officeDetail {
+  font-size: 0.8rem;
+  color: #5a3921;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+.messagesContainer {
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 3px solid #8b5e3c;
+  background-color: #f9f2e3;
+  padding: 15px;
+  position: relative;
+}
+
+.messagesContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.messagesContainer::-webkit-scrollbar-track {
+  background: #d2b48c;
+}
+
+.messagesContainer::-webkit-scrollbar-thumb {
+  background: #8b5e3c;
+  border-radius: 5px;
+}
+
+.tickerTape {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.telegram {
+  background-color: #f7f0e0;
+  padding: 15px;
+  border: 1px solid #d2b48c;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.userTelegram {
+  border-left: 5px solid #8b5e3c;
+}
+
+.systemTelegram {
+  border-left: 5px solid #5a3921;
+}
+
+.telegramHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #d2b48c;
+}
+
+.telegramOffice, .telegramTimestamp {
+  font-weight: bold;
+  color: #5a3921;
+}
+
+.telegramBody {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.telegramFooter {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+}
+
+.telegramStamp {
+  border: 1px solid #8b5e3c;
+  padding: 2px 8px;
+  border-radius: 3px;
+  color: #5a3921;
+  background-color: #f3e9d9;
+  font-weight: bold;
+  transform: rotate(-3deg);
+}
+
+.messageForm {
+  display: flex;
+  gap: 15px;
+}
+
+.messageSlip {
+  flex: 1;
+  background-color: #f7f0e0;
+  border: 2px solid #8b5e3c;
+  padding: 15px;
+  position: relative;
+}
+
+.telegramInput {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  resize: none;
+  color: #331800;
+}
+
+.telegramInput:focus {
+  outline: none;
+}
+
+.telegramInput::placeholder {
+  color: #a08c6c;
+}
+
+.typewriterLine {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  background-color: #a08c6c;
+  pointer-events: none;
+}
+
+.sendButton {
+  width: 70px;
+  height: 70px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.sendButton:hover {
+  transform: scale(1.05);
+}
+
+.sendButton:active .waxSeal {
+  transform: translateY(3px);
+}
+
+.waxSeal {
+  width: 100%;
+  height: 100%;
+  background-color: #b22222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 0 #8b0000, 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.1s;
+}
+
+.waxSeal::before {
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.waxSeal::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(circle, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.1) 50%);
+  border-radius: 50%;
+}
+
+.waxSeal span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.sendButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.telegramAnimation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.tickerTapeAnimation {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    #5a3921 10%, 
+    #5a3921 30%, 
+    transparent 40%,
+    transparent 60%,
+    #5a3921 70%,
+    #5a3921 90%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: tickerTape 2s linear infinite;
+}
+
+@keyframes tickerTape {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .telegramOffice {
+    border-width: 8px;
+    padding: 10px;
+  }
+  
+  .officeHeader h1 {
+    font-size: 1.6rem;
+  }
+  
+  .messageForm {
+    flex-direction: column;
+  }
+  
+  .sendButton {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+  }
+}
