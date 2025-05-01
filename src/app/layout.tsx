@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 // Load EB Garamond for body text (from Google Fonts)
 const garamond = EB_Garamond({
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${garamond.variable} ${playfair.variable} antialiased`}
       >
         <div className="newspaper-container">
+          <Navigation />
           {children}
         </div>
       </body>
