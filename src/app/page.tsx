@@ -52,13 +52,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>TOWN HALL RENOVATION APPROVED</h3>
             <p>
-              The City Council has unanimously approved funding for the long-awaited renovation of the historic Town Hall. The $45,000 project will restore the building's façade and modernize internal facilities while preserving its architectural significance.
+              The City Council has unanimously approved funding for the long-awaited renovation of the historic Town Hall. The $45,000 project will restore the building&apos;s façade and modernize internal facilities while preserving its architectural significance.
             </p>
             <p>
-              "This beloved landmark has served our community for over seven decades," remarked Mayor Thompson at yesterday's council meeting. "These improvements will ensure it continues to stand as the heart of our civic life for generations to come."
+            &quot;This beloved landmark has served our community for over seven decades,&quot; remarked Mayor Thompson at yesterday&apos;s council meeting. &quot;These improvements will ensure it continues to stand as the heart of our civic life for generations to come.&quot;
             </p>
             <p>
-              Construction is scheduled to commence next month and is expected to be completed by year's end. Temporary administrative offices will be established in the Bedford Building on Main Street during the renovation period.
+              Construction is scheduled to commence next month and is expected to be completed by year&apos;s end. Temporary administrative offices will be established in the Bedford Building on Main Street during the renovation period.
             </p>
             <div className="newspaper-continued">Continued on Page A3, Column 2</div>
           </article>
@@ -93,13 +93,13 @@ export default function Home() {
         <div className="newspaper-columns-3">
           <article className="newspaper-article">
             <p className="newspaper-dropcap">
-              Diplomatic efforts to secure lasting peace in the Balkan region have encountered significant obstacles, according to reports from Constantinople. Yesterday's summit between Ottoman officials and representatives of Bulgaria, Serbia, and Greece concluded without resolution, casting doubt upon hopes for imminent stability in the region.
+              Diplomatic efforts to secure lasting peace in the Balkan region have encountered significant obstacles, according to reports from Constantinople. Yesterday&apos;s summit between Ottoman officials and representatives of Bulgaria, Serbia, and Greece concluded without resolution, casting doubt upon hopes for imminent stability in the region.
             </p>
             <p>
-              "The parties remain fundamentally divided on questions of territorial boundaries and minority protections," stated British envoy Sir Arthur Nicolson, who has been observing the proceedings. "While all express desire for peace, concessions have been minimal."
+            &apos;The parties remain fundamentally divided on questions of territorial boundaries and minority protections,&quot; stated British envoy Sir Arthur Nicolson, who has been observing the proceedings. &quot;While all express desire for peace, concessions have been minimal.&quot;
             </p>
             <p>
-              Foreign ministers from France, Germany, and Russia have issued a joint statement urging all parties to demonstrate "prudence and moderation" in their demands, fearing that continued discord might ignite wider hostilities.
+              Foreign ministers from France, Germany, and Russia have issued a joint statement urging all parties to demonstrate &quot;prudence and moderation&quot; in their demands, fearing that continued discord might ignite wider hostilities.
             </p>
             <div className="newspaper-continued">Continued on Page C1, Column 3</div>
           </article>
@@ -107,13 +107,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>GERMAN NAVAL EXPANSION CONTINUES APACE</h3>
             <p>
-              The Imperial German Navy launched its newest dreadnought yesterday at Kiel, marking another milestone in Kaiser Wilhelm's ambitious naval program. The SMS Westfalen, displacing 18,900 tons, represents the latest advancement in naval architecture and firepower.
+              The Imperial German Navy launched its newest dreadnought yesterday at Kiel, marking another milestone in Kaiser Wilhelm&apos;s ambitious naval program. The SMS Westfalen, displacing 18,900 tons, represents the latest advancement in naval architecture and firepower.
             </p>
             <p>
-              British Admiralty officials have reportedly expressed concern over the rapid pace of German naval construction, which threatens to diminish Britain's traditional maritime supremacy. First Lord of the Admiralty McKenna has requested additional funding for British shipbuilding in response.
+              British Admiralty officials have reportedly expressed concern over the rapid pace of German naval construction, which threatens to diminish Britain&apos;s traditional maritime supremacy. First Lord of the Admiralty McKenna has requested additional funding for British shipbuilding in response.
             </p>
             <p>
-              Meanwhile, German officials maintain that their naval expansion serves purely defensive purposes and is commensurate with Germany's growing status as a world power with extensive colonial and commercial interests.
+              Meanwhile, German officials maintain that their naval expansion serves purely defensive purposes and is commensurate with Germany&apos;s growing status as a world power with extensive colonial and commercial interests.
             </p>
             <div className="newspaper-continued">Continued on Page C2, Column 1</div>
           </article>
@@ -121,7 +121,7 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>ARCHAEOLOGICAL DISCOVERY IN EGYPT STUNS EXPERTS</h3>
             <p>
-              British archaeologists working near Luxor have uncovered an intact tomb believed to date from the 18th Dynasty, approximately 3,400 years ago. The expedition, led by Professor Howard Carter of the British Museum, describes the find as "extraordinarily well-preserved" and potentially of great historical significance.
+              British archaeologists working near Luxor have uncovered an intact tomb believed to date from the 18th Dynasty, approximately 3,400 years ago. The expedition, led by Professor Howard Carter of the British Museum, describes the find as &quot;extraordinarily well-preserved&quot; and potentially of great historical significance.
             </p>
             <p>
               Initial examination has revealed numerous artifacts, including ceremonial objects, jewelry, and written papyri that may provide new insights into ancient Egyptian religious practices and daily life during the New Kingdom period.
@@ -149,7 +149,7 @@ export default function Home() {
               The Ford Motor Company announced yesterday that sales of their Model T automobile have exceeded all expectations, with more than 12,000 units sold in the previous month alone. This remarkable figure represents a 40% increase over the same period last year.
             </p>
             <p>
-              Henry Ford attributes this success to his company's revolutionary assembly line method, which has dramatically reduced production costs while maintaining quality standards. "Our aim is to produce motorcars that the average American worker can afford," stated Ford in a recent interview.
+              Henry Ford attributes this success to his company&apos;s revolutionary assembly line method, which has dramatically reduced production costs while maintaining quality standards. &quot;Our aim is to produce motorcars that the average American worker can afford,&quot; stated Ford in a recent interview.
             </p>
             <p>
               The popularity of these affordable motorcars is transforming American society, with rural families now able to travel to nearby towns and cities with unprecedented ease. Meanwhile, city dwellers increasingly venture into the countryside for weekend excursions.
@@ -170,13 +170,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>NEW BANKING REGULATIONS PROPOSED</h3>
             <p>
-              Senator Aldrich yesterday introduced legislation aimed at reforming the nation's banking system. The proposed measures would establish a central banking authority to better coordinate currency supply and prevent financial panics such as that experienced in 1907.
+              Senator Aldrich yesterday introduced legislation aimed at reforming the nation&apos;s banking system. The proposed measures would establish a central banking authority to better coordinate currency supply and prevent financial panics such as that experienced in 1907.
             </p>
             <p>
               Leading financiers have expressed cautious support for the measure, though some rural representatives remain skeptical, fearing excessive concentration of financial power in Eastern institutions.
             </p>
             <p>
-              "Our aim is to create a more resilient and responsive financial system that serves the needs of commerce while maintaining stability," the Senator explained to reporters following the bill's introduction.
+            &quot;Our aim is to create a more resilient and responsive financial system that serves the needs of commerce while maintaining stability,&quot; the Senator explained to reporters following the bill&apos;s introduction.
             </p>
             <div className="newspaper-continued">Continued on Page B2, Column 3</div>
           </article>
@@ -213,10 +213,10 @@ export default function Home() {
               The national pastime returned in grand fashion yesterday as the baseball season commenced with enthusiasm and pageantry across the country. At the Polo Grounds, where an estimated 28,000 spectators gathered despite overcast conditions, the New York Giants secured a hard-fought victory over their Brooklyn rivals by a score of 3-2.
             </p>
             <p>
-              Christy Mathewson, the Giants' celebrated hurler, demonstrated his continued mastery on the mound, allowing just five hits while striking out seven Brooklyn batsmen. The decisive run came in the eighth inning when Captain Larry Doyle drove a line drive into right field, scoring Fred Merkle from second base.
+              Christy Mathewson, the Giants&apos; celebrated hurler, demonstrated his continued mastery on the mound, allowing just five hits while striking out seven Brooklyn batsmen. The decisive run came in the eighth inning when Captain Larry Doyle drove a line drive into right field, scoring Fred Merkle from second base.
             </p>
             <p>
-              "The boys showed exceptional form for so early in the season," remarked Giants manager John McGraw. "If we maintain this level of play, I'm confident in our pennant prospects."
+            &quot;The boys showed exceptional form for so early in the season,&quot; remarked Giants manager John McGraw. &quot;If we maintain this level of play, I&apos;m confident in our pennant prospects.&quot;
             </p>
             <div className="newspaper-continued">Continued on Page S1, Column 1</div>
           </article>
@@ -224,13 +224,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>OLYMPIC PREPARATIONS ADVANCE IN SWEDEN</h3>
             <p>
-              Officials in Stockholm report that construction of facilities for next year's Olympic Games proceeds on schedule. The main stadium, with capacity for 22,000 spectators, is nearly complete, along with venues for swimming, gymnastics, and other competitions.
+              Officials in Stockholm report that construction of facilities for next year&apos;s Olympic Games proceeds on schedule. The main stadium, with capacity for 22,000 spectators, is nearly complete, along with venues for swimming, gymnastics, and other competitions.
             </p>
             <p>
               American athletic officials have begun selection trials for what promises to be the largest team yet sent to the international event. Particular hopes rest upon our track and field competitors, who dominated at the London Games four years ago.
             </p>
             <p>
-              "American sporting prowess will be well-represented in Sweden," declared James Sullivan, secretary of the Amateur Athletic Union. "Our athletes are training vigorously for this opportunity to bring honor to our nation."
+            &quot;American sporting prowess will be well-represented in Sweden,&quot; declared James Sullivan, secretary of the Amateur Athletic Union. &quot;Our athletes are training vigorously for this opportunity to bring honor to our nation.&quot;
             </p>
             <div className="newspaper-continued">Continued on Page S2, Column 4</div>
           </article>
@@ -238,13 +238,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>BOXING CHAMPIONSHIP BOUT SCHEDULED</h3>
             <p>
-              Heavyweight champion Jack Johnson will defend his title against Jim Jeffries in what promoters are calling "The Fight of the Century," scheduled for July 4th in Reno, Nevada. Interest in the contest has reached unprecedented levels, with thousands expected to travel west for the spectacle.
+              Heavyweight champion Jack Johnson will defend his title against Jim Jeffries in what promoters are calling &quot;The Fight of the Century,&quot; scheduled for July 4th in Reno, Nevada. Interest in the contest has reached unprecedented levels, with thousands expected to travel west for the spectacle.
             </p>
             <p>
-              Jeffries, who retired undefeated six years ago, has been training intensively at his California camp. Recent reports suggest he has regained much of the formidable conditioning that once made him the sport's most feared competitor.
+              Jeffries, who retired undefeated six years ago, has been training intensively at his California camp. Recent reports suggest he has regained much of the formidable conditioning that once made him the sport&apos;s most feared competitor.
             </p>
             <p>
-              Johnson, meanwhile, continues to train in Chicago, expressing confidence in his abilities. "I respect Mr. Jeffries' accomplishments," the champion stated, "but the outcome is not in doubt."
+              Johnson, meanwhile, continues to train in Chicago, expressing confidence in his abilities. &quot;I respect Mr. Jeffries&apos; accomplishments,&quot; the champion stated, &quot;but the outcome is not in doubt.&quot;
             </p>
             <div className="newspaper-continued">Continued on Page S3, Column 2</div>
           </article>
@@ -263,10 +263,10 @@ export default function Home() {
         <div className="newspaper-columns-3">
           <article className="newspaper-article">
             <p className="newspaper-dropcap">
-              Mrs. Cornelius Vanderbilt III hosted what society observers unanimously declare to be the most spectacular gathering of the season last evening. The theme, "Versailles in the Age of Louis XV," was executed with extraordinary attention to historical detail, transforming the Vanderbilt mansion into a reasonable facsimile of the French royal palace.
+              Mrs. Cornelius Vanderbilt III hosted what society observers unanimously declare to be the most spectacular gathering of the season last evening. The theme, &quot;Versailles in the Age of Louis XV,&quot; was executed with extraordinary attention to historical detail, transforming the Vanderbilt mansion into a reasonable facsimile of the French royal palace.
             </p>
             <p>
-              Guests, numbering approximately four hundred of the city's most prominent families, arrived in meticulously crafted period costumes. Mrs. Astor appeared as Marie Antoinette in a gown reportedly valued at $12,000, adorned with authentic eighteenth-century lace and family jewels, while Mr. J.P. Morgan cut an impressive figure as Cardinal Richelieu.
+              Guests, numbering approximately four hundred of the city&apos;s most prominent families, arrived in meticulously crafted period costumes. Mrs. Astor appeared as Marie Antoinette in a gown reportedly valued at $12,000, adorned with authentic eighteenth-century lace and family jewels, while Mr. J.P. Morgan cut an impressive figure as Cardinal Richelieu.
             </p>
             <p>
               The evening featured authentic French cuisine prepared by chefs brought expressly from Paris for the occasion, along with musical performances by members of the Metropolitan Opera Company.
@@ -277,7 +277,7 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>WEDDING ANNOUNCEMENT: HARRINGTON—WINTHROP</h3>
             <p>
-              Mr. and Mrs. George Harrington of Boston announce the engagement of their daughter, Miss Eleanor Harrington, to Mr. Frederick Winthrop, son of Colonel and Mrs. Robert Winthrop of New York. Miss Harrington was presented to society two seasons ago and has since been among the most admired young ladies in Boston's social circles.
+              Mr. and Mrs. George Harrington of Boston announce the engagement of their daughter, Miss Eleanor Harrington, to Mr. Frederick Winthrop, son of Colonel and Mrs. Robert Winthrop of New York. Miss Harrington was presented to society two seasons ago and has since been among the most admired young ladies in Boston&apos;s social circles.
             </p>
             <p>
               Mr. Winthrop graduated from Harvard University in 1907 and now serves as vice president of the Winthrop Banking Corporation. The wedding is scheduled for June at Trinity Church, with a reception to follow at the Somerset Club.
@@ -287,7 +287,7 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>NEWPORT SEASON PREPARATIONS BEGIN</h3>
             <p>
-              Servants and contractors were observed yesterday preparing several prominent summer "cottages" along Bellevue Avenue for the upcoming Newport season. The Breakers, summer residence of Mrs. Cornelius Vanderbilt II, appears to be undergoing minor renovations to its grand ballroom.
+              Servants and contractors were observed yesterday preparing several prominent summer &quot;cottages&quot; along Bellevue Avenue for the upcoming Newport season. The Breakers, summer residence of Mrs. Cornelius Vanderbilt II, appears to be undergoing minor renovations to its grand ballroom.
             </p>
             <p>
               Social secretaries report that the season promises to be particularly active, with at least twelve major balls planned, along with the usual yacht races, tennis tournaments, and polo matches that define summer among the elite.
@@ -327,10 +327,10 @@ export default function Home() {
         <div className="newspaper-columns-3">
           <article className="newspaper-article">
             <p className="newspaper-dropcap">
-              The Metropolitan Opera has unveiled plans for its most ambitious season to date, featuring twenty-two different operas including four American premieres. Enrico Caruso, the incomparable Italian tenor, will headline three new productions, including the first American performance of Puccini's "La Fanciulla del West," which the composer has written specifically with the Met in mind.
+              The Metropolitan Opera has unveiled plans for its most ambitious season to date, featuring twenty-two different operas including four American premieres. Enrico Caruso, the incomparable Italian tenor, will headline three new productions, including the first American performance of Puccini&apos;s &quot;La Fanciulla del West,&quot; which the composer has written specifically with the Met in mind.
             </p>
             <p>
-              "We continue our commitment to presenting both beloved classics and innovative new works," stated Metropolitan Opera general manager Giulio Gatti-Casazza. "The American premieres represent our belief that opera remains a vital, evolving art form rather than merely a museum of past achievements."
+            &quot;We continue our commitment to presenting both beloved classics and innovative new works,&quot; stated Metropolitan Opera general manager Giulio Gatti-Casazza. &quot;The American premieres represent our belief that opera remains a vital, evolving art form rather than merely a museum of past achievements.&quot;
             </p>
             <p>
               Subscription seats are already reported to be selling at unprecedented rates, with the performances featuring Mr. Caruso almost entirely subscribed. Individual tickets go on sale next month.
@@ -341,13 +341,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>CONTROVERSIAL PAINTING EXHIBITION DRAWS CROWDS</h3>
             <p>
-              The display of works by several modern European painters at Stieglitz's 291 Gallery continues to attract both visitors and heated debate. The paintings, representing the so-called "Post-Impressionist" movement, feature distorted forms and unnatural colors that challenge conventional artistic standards.
+              The display of works by several modern European painters at Stieglitz&apos;s 291 Gallery continues to attract both visitors and heated debate. The paintings, representing the so-called &quot;Post-Impressionist&quot; movement, feature distorted forms and unnatural colors that challenge conventional artistic standards.
             </p>
             <p>
-              "These works represent nothing less than the future direction of serious art," asserted Mr. Stieglitz, the exhibition's organizer. "They express inner truths rather than merely reproducing external appearances."
+            &quot;These works represent nothing less than the future direction of serious art,&quot; asserted Mr. Stieglitz, the exhibition&apos;s organizer. &quot;They express inner truths rather than merely reproducing external appearances.&quot;
             </p>
             <p>
-              Many established critics have responded with skepticism or outright dismissal, with the Tribune's veteran art correspondent describing the exhibition as "the products of mental imbalance rather than artistic vision." Nevertheless, attendance has been substantial, suggesting public curiosity about these radical departures from tradition.
+              Many established critics have responded with skepticism or outright dismissal, with the Tribune&apos;s veteran art correspondent describing the exhibition as &quot;the products of mental imbalance rather than artistic vision.&quot; Nevertheless, attendance has been substantial, suggesting public curiosity about these radical departures from tradition.
             </p>
             <div className="newspaper-continued">Continued on Page F3, Column 1</div>
           </article>
@@ -355,13 +355,13 @@ export default function Home() {
           <article className="newspaper-article">
             <h3>NEW RAGTIME COMPOSITIONS GAIN POPULARITY</h3>
             <p>
-              The syncopated musical style known as "ragtime" continues to gain popularity across the nation, with sheet music sales for such compositions reaching unprecedented levels. Mr. Scott Joplin's latest work, "Solace - A Mexican Serenade," has proven particularly successful, demonstrating the composer's continuing evolution within the form he has done so much to define.
+              The syncopated musical style known as &quot;ragtime&quot; continues to gain popularity across the nation, with sheet music sales for such compositions reaching unprecedented levels. Mr. Scott Joplin&apos;s latest work, &quot;Solace - A Mexican Serenade,&quot; has proven particularly successful, demonstrating the composer&apos;s continuing evolution within the form he has done so much to define.
             </p>
             <p>
               Critics remain divided on the musical merits of ragtime, with traditional commentators dismissing it as a vulgar fad, while younger music enthusiasts praise its rhythmic innovation and distinctively American character.
             </p>
             <p>
-              "This music represents the first truly American contribution to musical composition," contends Professor Harold Schmidt of Cincinnati Conservatory. "It draws upon multiple traditions to create something entirely new and vital."
+            &quot;This music represents the first truly American contribution to musical composition,&quot; contends Professor Harold Schmidt of Cincinnati Conservatory. &quot;It draws upon multiple traditions to create something entirely new and vital.&quot;
             </p>
             <div className="newspaper-continued">Continued on Page F4, Column 3</div>
           </article>
